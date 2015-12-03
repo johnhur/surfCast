@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Surf Index</title>
+</head>
+<body>
+	<div class="ui button">button</div>
+	data:
+	<ul>
+	<% @data.each do |data| %>
+		<li>
+			<%= data['spot_name'] %> // <%= data['shape_detail']['swell'] %> // size: <%= data['size'] %> //<%= data['hour'] %>
+		</li>
+		<% end %>
+	</ul> 
+	beach name: <%= @spots[0].name %>
+</body>
+</html>

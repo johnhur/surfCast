@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>NewUser</title>
+</head>
+<body>
+	
+    <form action="/users" method="POST">
+        <label for="user_first_name">Name</label>
+        <input type="text" name="user[first_name]" id="user_first_name"><br/>
+        <label for="user_last_name">Image Url</label>
+        <input type="text" name="user[last_name]" id="user_last_name"><br/>
+        <input type="submit" value="New User">
+    </form>
+</body>
+</html>
